@@ -1,0 +1,148 @@
+body {
+    background-color: #333;
+    color: white;
+}
+
+a {
+    color: #ffc107;
+}
+
+.jumbotron {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+    color: white;
+    background-color: #333;
+}
+
+.space-above {
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+.card{
+    border-color: #ffc107;
+}
+
+.card-body{
+    background-color: #333;
+    color:white
+}
+
+.my-btn {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+.error{
+    color:red;
+    margin-bottom: 10px;
+}
+
+
+/* FORM */
+.group {
+    position: relative;
+   }
+   
+   .input {
+    color: white;
+    font-size: 16px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 400px;
+    border: none;
+    border-bottom: 1px solid #515151;
+    background: transparent;
+   }
+   
+   .input:focus {
+    outline: none;
+   }
+
+   label{
+    color: #999;
+    font-size: 18px;
+    font-weight: normal;
+    
+   }
+
+.group label{
+    color: #999;
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+   }
+   
+   .input:focus ~ label, .input:valid ~ label {
+    top: -20px;
+    font-size: 14px;
+    color: #5264AE;
+   }
+   
+   .bar {
+    position: relative;
+    display: block;
+    width: 400px;
+   }
+   
+   .bar:before, .bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #5264AE;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+   }
+   
+   .bar:before {
+    left: 50%;
+   }
+   
+   .bar:after {
+    right: 50%;
+   }
+   
+   .input:focus ~ .bar:before, .input:focus ~ .bar:after {
+    width: 50%;
+   }
+   
+   .highlight {
+    position: absolute;
+    height: 60%;
+    width: 200px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+   }
+   
+   .input:focus ~ .highlight {
+    animation: inputHighlighter 0.3s ease;
+   }
+   
+   @keyframes inputHighlighter {
+    from {
+     background: #5264AE;
+    }
+   
+    to {
+     width: 0;
+     background: transparent;
+    }
+   }
